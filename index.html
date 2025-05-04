@@ -1,0 +1,765 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Daraz Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Custom scrollbar for horizontal scroll sections */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <!-- Top orange bar -->
+  <div class="bg-[#FF6200] text-white text-xs flex justify-end space-x-6 px-4 py-1 font-semibold">
+   <a class="hover:underline" href="#">
+    DARAZ CAREERS
+   </a>
+   <a class="hover:underline" href="#">
+    SELL ON DARAZ
+   </a>
+   <a class="hover:underline" href="#">
+    HELP &amp; SUPPORT
+   </a>
+   <a class="hover:underline" href="#">
+    LOGIN
+   </a>
+   <a class="hover:underline" href="#">
+    SIGNUP
+   </a>
+   <a class="hover:underline" href="#">
+    APP DOWNLOAD
+   </a>
+  </div>
+  <!-- Header with logo and search -->
+  <header class="bg-[#FF6200] px-4 py-3 flex items-center space-x-4">
+   <img src="daraz logo.png" height="200" width="100">
+   <form class="flex flex-grow max-w-4xl">
+    <input class="flex-grow rounded-l-md px-3 py-2 text-sm focus:outline-none" placeholder="Search in Daraz" type="text"/>
+    <button aria-label="Search" class="bg-white text-[#FF6200] px-4 rounded-r-md hover:bg-gray-100" type="submit">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </form>
+  </header>
+  <!-- Main banner area -->
+  <section class="relative bg-[#FF6200] px-4 py-6 max-w-[1200px] mx-auto">
+   <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex flex-col space-y-2 max-w-[320px] text-white">
+     <div class="bg-white text-[#FF6200] font-bold text-xs uppercase px-2 py-1 w-max rounded">
+      5.5 BEST PRICE DEALS
+     </div>
+     <h2 class="font-extrabold text-3xl leading-tight">
+      HOT DEALS
+     </h2>
+     <p class="text-sm font-semibold">
+      Best deals on best prices
+     </p>
+     <button class="bg-[#A1C935] text-xs font-semibold rounded-full px-4 py-1 w-max mt-2" type="button">
+      Add to Cart
+     </button>
+    </div>
+    <div class="relative flex-shrink-0 w-[280px] h-[180px] md:w-[400px] md:h-[250px]">
+     <img alt="Product display with white t-shirt, shoes, lamp, and speaker on an orange background with glowing triangular frame" class="object-contain w-full h-full" height="250" src="https://storage.googleapis.com/a1aa/image/250dceeb-89e2-437d-e61b-84620f3f2920.jpg" width="400"/>
+    </div>
+    <div class="bg-white rounded-lg p-3 w-[140px] text-center text-xs font-semibold text-[#FF6200]">
+     <div class="mb-2">
+      TRY DARAZ APP
+     </div>
+     <div class="mb-2 text-gray-600 font-normal">
+      Download the App now
+     </div>
+     <div class="bg-gradient-to-br from-pink-400 to-yellow-400 rounded-md p-2 text-white font-bold mb-3">
+      Free Shipping &amp; Exclusive Discounts
+     </div>
+     <img alt="QR code for Daraz app download" class="mx-auto mb-3" height="100" src="https://storage.googleapis.com/a1aa/image/679431e4-a807-4f12-d262-8cb454025f77.jpg" width="100"/>
+     <div class="flex justify-center space-x-2 text-xs font-normal text-gray-600">
+      <a class="underline" href="#">
+       App Store
+      </a>
+      <a class="underline" href="#">
+       Google Play
+      </a>
+     </div>
+     <div class="mt-2 text-gray-400 text-xs">
+      Powered by Daraz
+     </div>
+    </div>
+   </div>
+   <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+    <span class="w-2 h-2 rounded-full bg-white">
+    </span>
+    <span class="w-2 h-2 rounded-full bg-white/50">
+    </span>
+    <span class="w-2 h-2 rounded-full bg-white/50">
+    </span>
+    <span class="w-2 h-2 rounded-full bg-white/50">
+    </span>
+    <span class="w-2 h-2 rounded-full bg-white/50">
+    </span>
+   </div>
+  </section>
+  <!-- Purple banner -->
+  <section class="bg-gradient-to-r from-purple-700 to-purple-500 rounded-full max-w-[1200px] mx-auto my-6 px-4 py-3 flex items-center justify-between text-white text-xs font-bold max-h-[60px] overflow-hidden">
+   <div class="flex items-center space-x-3">
+    <div class="bg-white text-purple-700 rounded-full px-3 py-1 font-extrabold text-sm">
+     5.5
+    </div>
+    <div>
+     BEST PRICE BEST DEALS
+    </div>
+   </div>
+   <div class="flex items-center space-x-3">
+    <img alt="Colorful phones and shoes product images on purple background" class="h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/162c0ee6-2864-4433-6953-32726f0b552c.jpg" width="80"/>
+    <div>
+     UPTO 60% OFF
+    </div>
+    <button class="bg-pink-600 rounded-full px-4 py-1 text-xs font-bold hover:bg-pink-700">
+     ADD TO CART
+    </button>
+   </div>
+  </section>
+  <!-- Flash Sale Section -->
+  <section class="max-w-[1200px] mx-auto px-4 mb-6">
+   <div class="flex justify-between items-center mb-2 text-xs font-semibold text-gray-600">
+    <div>
+     Flash Sale
+    </div>
+    <a class="text-[#FF6200] hover:underline" href="#">
+     SHOP ALL PRODUCTS
+    </a>
+   </div>
+   <div class="flex overflow-x-auto scrollbar-hide space-x-4 pb-2">
+    <!-- 6 flash sale items -->
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="Nestle Everyday Milk Tea Whitener product box" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/8f59e651-3e09-4fa1-f102-e03d843c1c0a.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      Tea Whitener - NESTLE Everyday Milk Tea Whitener 400g
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.1,033
+     </div>
+     <div class="line-through text-gray-400 text-[10px]">
+      Rs.1,100
+     </div>
+     <div class="text-green-600 text-[10px]">
+      -6%
+     </div>
+    </div>
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="Lemon Max 60g powder pack" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/7ccf079c-a9bb-4c11-3e06-fa50ba6b1913.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      Lemon Max 60g (Lemon Power)
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.71
+     </div>
+     <div class="line-through text-gray-400 text-[10px]">
+      Rs.75
+     </div>
+     <div class="text-green-600 text-[10px]">
+      -5%
+     </div>
+    </div>
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="Sun Coco Cooking Oil 1L bottle" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/ea5de862-e2cc-42c2-6b8d-df048ed1056a.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      Sun Coco Cooking Oil 1L
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.270
+     </div>
+     <div class="line-through text-gray-400 text-[10px]">
+      Rs.300
+     </div>
+     <div class="text-green-600 text-[10px]">
+      -10%
+     </div>
+    </div>
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="Brite Medium Power Detergent Powder 1kg" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/c970c732-80e5-4b62-8d64-1a84578f489f.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      Brite Medium Power Detergent Powder 1kg
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.248
+     </div>
+     <div class="line-through text-gray-400 text-[10px]">
+      Rs.260
+     </div>
+     <div class="text-green-600 text-[10px]">
+      -5%
+     </div>
+    </div>
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="AirPods Pro 2nd Gen wireless earbuds" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/938ac225-8cd8-4be7-5a0d-93dbae8f2cf4.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      AirPods Pro 2 &amp; 3
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.7,495
+     </div>
+    </div>
+    <div class="flex-shrink-0 w-28 text-center text-xs">
+     <img alt="Stylish small dog bag for pets" class="mx-auto mb-1" height="100" src="https://storage.googleapis.com/a1aa/image/bf074785-a1ef-4296-54ec-3fcd15126f55.jpg" width="100"/>
+     <div class="font-semibold truncate">
+      Stylish Small Dog Bag for Pets
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.800
+     </div>
+     <div class="line-through text-gray-400 text-[10px]">
+      Rs.1,000
+     </div>
+     <div class="text-green-600 text-[10px]">
+      -20%
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Categories Section -->
+  <section class="max-w-[1200px] mx-auto px-4 mb-6">
+   <h3 class="text-sm font-semibold mb-2">
+    Categories
+   </h3>
+   <div class="grid grid-cols-5 sm:grid-cols-10 gap-2 text-center text-xs text-gray-700">
+    <div>
+     <img alt="3D Printers category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/c2792455-f3ed-4109-d04f-1a08c449a416.jpg" width="50"/>
+     <div>
+      3D Printers
+     </div>
+    </div>
+    <div>
+     <img alt="SIM Tools category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/d3770bd3-8ac6-4279-b0d3-882810366604.jpg" width="50"/>
+     <div>
+      SIM Tools
+     </div>
+    </div>
+    <div>
+     <img alt="Screen Protection category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/065cf7b0-5d93-46d5-c4a7-be51d1921061.jpg" width="50"/>
+     <div>
+      Screen Protection
+     </div>
+    </div>
+    <div>
+     <img alt="Camera and Photo category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/66c3373a-5f7e-4bda-bcc9-9c12efc87ccb.jpg" width="50"/>
+     <div>
+      Camera &amp; Photo
+     </div>
+    </div>
+    <div>
+     <img alt="Tablets and Laptops category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/d7929e8f-2d12-4d4d-b993-933d4d29afad.jpg" width="50"/>
+     <div>
+      Tablets &amp; Laptops
+     </div>
+    </div>
+    <div>
+     <img alt="Headsets and Microphones category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/c335c4f5-1707-43d6-5d0f-0e18253da2c3.jpg" width="50"/>
+     <div>
+      Headsets &amp; Microphones
+     </div>
+    </div>
+    <div>
+     <img alt="Toy Games and Gadgets category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/080ddb27-71a3-40e6-d13c-d0c34b4bc309.jpg" width="50"/>
+     <div>
+      Toy Games &amp; Gadgets
+     </div>
+    </div>
+    <div>
+     <img alt="Dogs and Cat Grooming Clippers category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/2bbf891f-c5d4-4e3f-4596-739f2d7f7b3e.jpg" width="50"/>
+     <div>
+      Dogs &amp; Cat Grooming Clippers
+     </div>
+    </div>
+    <div>
+     <img alt="Snacks category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/ed83b05c-32a4-4ed1-6411-acf2042ce815.jpg" width="50"/>
+     <div>
+      Snacks
+     </div>
+    </div>
+    <div>
+     <img alt="Education category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/45f6fad8-93c3-47db-706f-87720f292c2e.jpg" width="50"/>
+     <div>
+      Education
+     </div>
+    </div>
+    <div>
+     <img alt="Drawer and Box category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/05f0f8cb-f664-45c1-cbf6-ba9caa523bf4.jpg" width="50"/>
+     <div>
+      Drawer &amp; Box
+     </div>
+    </div>
+    <div>
+     <img alt="Drinking Straws category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/d10bc13b-a3e6-4f0b-7d45-f1e5c68a0e67.jpg" width="50"/>
+     <div>
+      Drinking Straws
+     </div>
+    </div>
+    <div>
+     <img alt="Microphones category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/e6d05d41-23eb-4b88-12ef-9b1e29d2740a.jpg" width="50"/>
+     <div>
+      Microphones
+     </div>
+    </div>
+    <div>
+     <img alt="Jewelry and Accessories category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/dac8956f-09f7-464d-33ea-dfb781af7dc7.jpg" width="50"/>
+     <div>
+      Jewelry &amp; Accessories
+     </div>
+    </div>
+    <div>
+     <img alt="Scooters category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/d37f4957-0dc8-4dfa-f26b-5e770a9812a9.jpg" width="50"/>
+     <div>
+      Scooters
+     </div>
+    </div>
+    <div>
+     <img alt="Donations for Education category icon" class="mx-auto mb-1" height="50" src="https://storage.googleapis.com/a1aa/image/aefaf615-69df-4709-69df-545d4463eff1.jpg" width="50"/>
+     <div>
+      Donations for Education
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Just For You Section -->
+  <section class="max-w-[1200px] mx-auto px-4 mb-6">
+   <h3 class="text-sm font-semibold mb-2">
+    Just For You
+   </h3>
+   <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3 text-xs text-gray-700">
+    <!-- 40 product cards with images and text truncated -->
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="New trendy printed hoodie black and white" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/8672d5dc-e8f2-46e9-2e53-285809d8fda3.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      New trendy printed hoodie black and white
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.2,770
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 2.4K
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Pro White TWS Airpods with charging case" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/a3acbac9-2ca3-4d50-c454-bc37f57299cb.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Pro White TWS Airpods with charging case
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.514
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 500+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Argento Summer Printed T-Shirt for Men &amp; Boys" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/ed12d3cb-f5f1-4f46-b4ff-0feb58dd7cf8.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Argento Summer Printed T-Shirt for Men &amp; Boys
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.650
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 1.2K
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="WARMTH 13 Pcs Makeup Brush Set Soft Synthetic Hair" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/35cd871e-8b61-43de-fd56-033deacb4a6f.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      WARMTH 13 Pcs Makeup Brush Set Soft Synthetic Hair
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.319
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 500+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Sandal for Men | New Stylish and Trendy" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/1237ed6f-17cf-4e7c-0a18-af79e95289b6.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Sandal for Men | New Stylish and Trendy
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.319
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 270+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Old Vintage City Game Only for Kids" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/89f79fa9-e62a-4dc1-2126-38bc3b3479b7.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Old Vintage City Game Only for Kids
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.49
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 300+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Awesome Phone Silicone Set" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/8bdee9d8-af9e-4f19-721a-dfdb25c0206a.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Awesome Phone Silicone Set
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.319
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 500+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Ladies slippers for party and casual wear" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/68607da2-e869-4284-e90b-8855486ed75b.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Ladies slippers for party and casual wear
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.799
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 270+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Awesome Golden Gun Toy" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/08b6b791-bb10-4adc-64e8-51805e364518.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Awesome Golden Gun Toy
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.1,000
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 1.2K
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="3 PCS Half Sleeve Summer Half Sleeve T-Shirt" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/9824e8eb-d75d-404f-3d13-86c3e8cf50fe.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      3 PCS Half Sleeve Summer Half Sleeve T-Shirt
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.699
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 500+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Pink Makeup Lip Gloss for Women" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/51f812c7-8730-42c2-1690-fada449667d9.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Pink Makeup Lip Gloss for Women
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.174
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 174
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Pack of 2 High Quality Silver Chain Set" class="mb-1 object-contain max-h-[100px]" height="150" src="https://storage.googleapis.com/a1aa/image/96bc3aaf-e0f2-4959-5d20-a9ab429e2864.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Pack of 2 High Quality Silver Chain Set
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.1,479
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 500+
+     </div>
+    </div>
+    <!-- Additional product cards with placeholders for the rest of the items -->
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="slippers" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Sandals For Men
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.859
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="headphone.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+        M10 , A6s , F2 earbuds Headphones
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.1540
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="handle.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+        Mosquito Coil Stand Triangle Anti-scald Mosquito Coil Holder Stand 
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.780
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="camera.webp" width="150"/>
+     <div class="font-semibold truncate text-center">
+        Non-slip Dock Desktop support Camera 
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.540
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="shoes.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+        Foot Shoes For Men - Black Joggers - Shoes
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.1200
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="bag.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Collage boys bag
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.999
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="light.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Ring Light with phone Holder
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.999
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    </div>
+    <div class="border border-gray-200 rounded p-2 flex flex-col items-center">
+     <img alt="Product image placeholder" class="mb-1 object-contain max-h-[100px]" height="150" src="ring.jpg" width="150"/>
+     <div class="font-semibold truncate text-center">
+      Unisex Golden Ring
+     </div>
+     <div class="text-red-600 font-bold">
+      Rs.999
+     </div>
+     <div class="text-yellow-400 text-[10px]">
+      ★★★★☆ 100+
+     </div>
+    
+    </div>
+   </div>
+  </section>
+  <!-- Load More Button -->
+  <div class="max-w-[1200px] mx-auto px-4 mb-12">
+   <button class="border border-[#00A0E9] text-[#00A0E9] text-xs font-semibold w-full py-1 rounded hover:bg-[#00A0E9] hover:text-white transition" type="button">
+    LOAD MORE
+   </button>
+  </div>
+  <!-- Footer top links -->
+  <footer class="bg-gray-100 text-gray-600 text-xs max-w-[1200px] mx-auto px-4 py-6 space-y-6">
+   <div class="flex flex-wrap justify-between gap-6">
+    <div class="flex flex-col space-y-1 min-w-[120px]">
+     <h4 class="font-semibold text-gray-900">
+      Customer Care
+     </h4>
+     <a class="hover:underline" href="#">
+      Help Center
+     </a>
+     <a class="hover:underline" href="#">
+      How to Buy
+     </a>
+     <a class="hover:underline" href="#">
+      Returns &amp; Refunds
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Wallet
+     </a>
+     <a class="hover:underline" href="#">
+      Corporate &amp; Bulk Purchasing
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Points
+     </a>
+    </div>
+    <div class="flex flex-col space-y-1 min-w-[120px]">
+     <h4 class="font-semibold text-gray-900">
+      Daraz
+     </h4>
+     <a class="hover:underline" href="#">
+      About Us
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Blog
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Careers
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Policies
+     </a>
+     <a class="hover:underline" href="#">
+      Terms &amp; Conditions
+     </a>
+     <a class="hover:underline" href="#">
+      Sitemap
+     </a>
+     <a class="hover:underline" href="#">
+      Daraz Affiliate Program
+     </a>
+    </div>
+    <div class="flex flex-col space-y-1 min-w-[120px]">
+     <h4 class="font-semibold text-gray-900">
+      Happy Shopping
+     </h4>
+     <div class="flex space-x-2">
+      <img alt="App Store badge" class="h-7 object-contain" height="30" src="https://storage.googleapis.com/a1aa/image/a8ff22ae-5a66-4c46-cdf7-11f06808309b.jpg" width="100"/>
+      <img alt="Google Play badge" class="h-7 object-contain" height="30" src="https://storage.googleapis.com/a1aa/image/28cc2b0a-c26f-44f3-5ac1-c5bd82b488c4.jpg" width="100"/>
+      <img alt="AppGallery badge" class="h-7 object-contain" height="30" src="https://storage.googleapis.com/a1aa/image/b8b49f51-a48f-47c7-d0cd-1b718451b9d3.jpg" width="100"/>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Payment and verification -->
+  <section class="max-w-[1200px] mx-auto px-4 py-4 border-t border-gray-300 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-600 space-y-3 sm:space-y-0">
+   <div class="flex space-x-2 items-center">
+    <img alt="Visa payment method logo" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/893b5a95-5e11-484f-e788-0340f0df74bd.jpg" width="40"/>
+    <img alt="Mastercard payment method logo" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/9f057829-eecc-42f5-c4eb-e8ad46238fef.jpg" width="40"/>
+    <img alt="American Express payment method logo" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/1b0d99a7-7ede-4c70-c4fc-af570f648fb1.jpg" width="40"/>
+    <img alt="JazzCash payment method logo" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/2ff0143d-6c6e-444f-3b0f-a73dd85c6558.jpg" width="40"/>
+    <img alt="Easypaisa payment method logo" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/254fa964-5f3e-44ce-1ceb-c5f59bc7ebde.jpg" width="40"/>
+   </div>
+   <div class="flex items-center space-x-2">
+    <img alt="PCI DSS verified badge" class="h-6 object-contain" height="30" src="https://storage.googleapis.com/a1aa/image/b174b0ef-d23c-4aec-0afe-92ef5701e13b.jpg" width="80"/>
+    <span>
+     Verified By
+    </span>
+   </div>
+  </section>
+  <!-- Bottom footer with text columns -->
+  <section class="bg-gray-100 text-gray-600 text-[10px] max-w-[1200px] mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 leading-tight">
+   <div>
+    <h5 class="font-semibold mb-1">
+     How Daraz Transformed Online Shopping in Pakistan
+    </h5>
+    <p>
+     Daraz has revolutionized the e-commerce landscape in Pakistan by providing a
+        seamless online shopping experience. With a vast product range, secure payment
+        options, and reliable delivery services, Daraz has become the go-to platform for
+        millions of customers nationwide.
+    </p>
+   </div>
+   <div>
+    <h5 class="font-semibold mb-1">
+     What Makes Us Different from Other Online Shopping Platforms
+    </h5>
+    <p>
+     Our commitment to customer satisfaction, exclusive deals, and a user-friendly
+        interface sets us apart. We offer multiple payment methods, easy returns, and
+        dedicated customer support to ensure a hassle-free shopping journey.
+    </p>
+   </div>
+   <div>
+    <h5 class="font-semibold mb-1">
+     Top Categories &amp; Brands
+    </h5>
+    <p>
+     Electronics, Fashion, Home Appliances, Beauty &amp; Health, Sports &amp; Outdoors,
+        Mobile Phones, Laptops, and more. Featuring top brands like Samsung, Apple,
+        Nike, and Daraz's own exclusive collections.
+    </p>
+   </div>
+   <div>
+    <h5 class="font-semibold mb-1">
+     Additional Information
+    </h5>
+    <p>
+     Daraz offers regular promotions, flash sales, and seasonal discounts. Our
+        mobile app provides an enhanced shopping experience with personalized
+        recommendations and easy navigation.
+    </p>
+   </div>
+  </section>
+  <!-- Bottom-most footer -->
+  <section class="bg-white text-gray-500 text-[10px] max-w-[1200px] mx-auto px-4 py-3 flex flex-wrap justify-between items-center border-t border-gray-300">
+   <div class="flex space-x-3 text-xs">
+    <a class="hover:underline" href="#">
+     Daraz International
+    </a>
+    <a class="hover:underline" href="#">
+     Bangladesh
+    </a>
+    <a class="hover:underline" href="#">
+     Sri Lanka
+    </a>
+    <a class="hover:underline" href="#">
+     Myanmar
+    </a>
+    <a class="hover:underline" href="#">
+     Nepal
+    </a>
+   </div>
+   <div class="flex space-x-3 text-xs">
+    <a class="hover:underline" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a class="hover:underline" href="#">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a class="hover:underline" href="#">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+    <a class="hover:underline" href="#">
+     <i class="fab fa-youtube">
+     </i>
+    </a>
+    <a class="hover:underline" href="#">
+     <i class="fas fa-globe">
+     </i>
+    </a>
+   </div>
+   <div class="text-xs">
+    © Daraz 2025
+   </div>
+  </section>
+ </body>
+</html>
